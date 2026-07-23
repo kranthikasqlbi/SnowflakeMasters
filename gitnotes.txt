@@ -1,0 +1,31 @@
+----------------------------------------
+cd D:\snowflakemasters
+git add .
+git commit -m "Added new files"
+git push origin master
+
+----------------------------------------
+
+Git add . 
+
+Git, prepare all these changes in this folder to be saved
+
+git commit
+
+Saves the staged changes as a permanent snapshot in your local Git repository.
+
+-m 
+Stands for message. It adds a description/message for the commit.
+
+push 
+
+Uploads your local commits to the remote GitHub repository.
+
+
+Origin
+
+origin is the default nickname (alias) for your remote GitHub repository.So instead of typing the full URL every time, Git uses origin.
+
+Master: 
+
+master is the branch name where you want to send your changes."Push my local commits to the GitHub repository called origin, into the master branch."
