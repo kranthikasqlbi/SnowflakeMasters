@@ -1,0 +1,76 @@
+Here are all 20 questions and answers formatted in plain text so you can easily copy and paste them directly into Notepad:
+
+# ==================================================
+SNOWFLAKE ARCHITECTURE & FEATURES - Q&A REVIEW
+
+---
+
+## ROUND 1: CORE ARCHITECTURE & FEATURES
+
+Q1: What architectural layer in Snowflake handles user authentication, metadata management, and query optimization?
+A1: Cloud Services Layer
+
+Q2: What is the fundamental, immutable storage unit in Snowflake that holds 50 MB to 150 MB of uncompressed columnar data?
+A2: Micro-partition
+
+Q3: What type of compute resource does Snowflake use to execute queries and load data?
+A3: Virtual Warehouse
+
+Q4: What feature allows you to create an instant copy of a table or database without duplicating the underlying storage?
+A4: Zero Copy Cloning
+
+Q5: What feature enables you to query historical data as it existed at any point within a specific retention period?
+A5: Time Travel
+
+Q6: What non-configurable, 7-day storage period starts immediately after Time Travel ends, accessible only by Snowflake Support?
+A6: Fail-Safe
+
+Q7: What automated process reorganizes table data in micro-partitions to optimize query performance along a cluster key?
+A7: Automatic Clustering
+
+Q8: What overall architectural model describes Snowflake's combination of centralized storage and independent compute resources?
+A8: 3-Tier Architecture (Centralized Storage, Multi-Cluster Compute, Cloud Services)
+
+Q9: What feature lets you query data stored in cloud storage (S3, Azure Blob, GCS) without loading it into Snowflake?
+A9: External Tables
+
+Q10: What background service continuously ingests streamed or auto-detected data from cloud storage into tables as soon as it arrives?
+A10: Snowpipe
+
+---
+
+## ROUND 2: ARCHITECTURE & INGESTION
+
+Q11: What type of architecture combines shared-disk simplicity with shared-nothing speed in Snowflake?
+A11: Multi-cluster Shared Data Architecture
+
+Q12: What architectural feature automatically spins up or shuts down additional compute clusters to handle heavy user traffic?
+A12: Multi-cluster Warehouses (Auto-Scaling)
+
+Q13: What system function checks the clustering quality and depth of your micro-partitions?
+A13: SYSTEM$CLUSTERING_INFORMATION
+
+Q14: What object acts as an intermediate pointer connecting Snowflake to an external cloud storage location like S3?
+A14: External Stage
+
+Q15: What temporary storage area in Snowflake holds data files staged for loading via the COPY INTO command?
+A15: Internal Stage
+
+Q16: What type of table is designed for high-concurrency transactional processing (OLTP) rather than analytics in Snowflake?
+A16: Unistore Hybrid Tables
+
+Q17: What change-data-capture (CDC) object tracks row-level changes (inserts, updates, deletes) made to a table over time?
+A17: Streams (paired with Tasks for automation)
+
+Q18: What feature provides declarative, automated data pipelines that automatically compute incremental updates?
+A18: Dynamic Tables
+
+---
+
+## ROUND 3: DYNAMIC TABLES DEEP-DIVE
+
+Q19: What single SQL parameter in a Dynamic Table definition tells Snowflake how fresh the data must be (e.g., '10 minutes')?
+A19: TARGET_LAG
+
+Q20: What approach do Dynamic Tables use where you just write a SELECT statement and Snowflake handles the pipeline automatically?
+A20: Declarative Data Pipelines (using Incremental Refreshes)

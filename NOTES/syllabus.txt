@@ -1,0 +1,26 @@
++==========================================+==========================================================================================================================================+
+| CATEGORY                                 | SUB TOPICS                                                                                                                               |
++==========================================+==========================================================================================================================================+
+| 1. Core Snowflake & SQL                  | Architecture, Cloud Editions, Organizations, Accounts, Databases, Schemas, Tables (Permanent, Transient, 											Temporary, External, Iceberg), |
+|                                          | Views, Materialized Views, Secure Views, Data Types, Constraints, Sequences, SQL (DDL, DML, DQL, DCL, TCL), 										Joins, CTEs,               |
+|                                          | Window Functions, QUALIFY, MERGE, Transactions, Time Travel, Fail-safe, Zero-Copy Cloning,                                              |
+|                                          | Micro-partitions, Columnar Storage, Clustering Keys, Search Optimization                                                                 |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| 2. Data Engineering & Pipelines          | Internal Stages, External Stages, File Formats (CSV, JSON, Parquet, Avro, ORC, XML), COPY INTO, Data Loading, 										Data Unloading,           |
+|                                          | Snowpipe, Snowpipe Streaming, Streams, Tasks, Dynamic Tables, CDC, MERGE Patterns, Data Validation, Error 												Handling,                     |
+|                                          | External Tables, dbt Basics, Fivetran, Airbyte, Kafka (Basics), Scheduling                                                               |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| 3. Advanced Development & AI             | Snowflake Scripting, Stored Procedures (SQL, JavaScript), UDFs, UDTFs, Snowpark (Python, Java, Scala), 												Variables,                       |
+|                                          | Exception Handling, Transactions, VARIANT, OBJECT, ARRAY, JSON, XML, Semi-Structured Data,                                              |
+|                                          | Cortex AI, COMPLETE, SUMMARIZE, TRANSLATE, EMBED, PARSE_DOCUMENT, Cortex Analyst, Cortex Search, Document AI                            |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| 4. Security, Performance & Administration| Users, Roles, RBAC, Grants, Future Grants, Role Hierarchy, Network Policies, MFA, OAuth, Key Pair 													Authentication,                       |
+|                                          | Secure Views, Masking Policies, Row Access Policies, Tags, Data Governance, Data Sharing, Listings, Clean 												Rooms,                         |
+|                                          | Virtual Warehouses, Auto Suspend/Resume, Multi-cluster Warehouses, Result Cache, Metadata Cache, Warehouse 											Cache,                        |
+|                                          | Query Profile, Search Optimization, Resource Monitors, Credit Usage, Cost Optimization, Query Acceleration 											Service (QAS)                 |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| 5. DevOps, Monitoring & Interview Notes  | dbt (Models, Sources, Seeds, Snapshots, Tests, Macros, Incremental Models, Packages, Exposures), Git, GitHub, 										VS Code,                 |
+|                                          | SnowSQL, CI/CD (GitHub Actions, Azure DevOps, Jenkins), Terraform (Basics), QUERY_HISTORY, TASK_HISTORY, 												COPY_HISTORY,                  |
+|                                          | PIPE_USAGE_HISTORY, ACCESS_HISTORY, LOGIN_HISTORY, WAREHOUSE_METERING_HISTORY, Common Errors, Troubleshooting,                           |
+|                                          | Best Practices, Naming Standards, Project Notes, Interview Questions, Cheat Sheets, Shortcuts                                            |
++==========================================+==========================================================================================================================================+

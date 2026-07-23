@@ -1,0 +1,43 @@
+---------------------------------------------------------------------------------
+				1) Architecture:
+---------------------------------------------------------------------------------
+--Cloud Services Layer
+
+Authentication & Security (RBAC, Users, Roles)
+Metadata Management (Schemas, Tables, Statistics)
+Query Optimization & Transaction Management
+
+--Compute Layer (Virtual Warehouse)
+
+Query Execution
+Data Loading & Transformation (COPY, INSERT, MERGE)
+Auto Scaling & Auto Suspend/Resume
+
+
+--Storage Layer
+
+Micro-Partitions (Automatic 16 MB Compressed Storage)
+Time Travel & Fail-safe
+Compressed, Encrypted Columnar Storage
+
+
+--------StorageLayer/Micro-partitions/Partition Pruning 
+Partition Pruning in Snowflake (Micro-Partition) means Snowflake automatically skips unnecessary micro-partitions and scans only the micro-partitions that may contain the required data.
+	If a filter column value exists in all micro-partitions, that column gives no pruning benefit.
+	Snowflake depends on other columns' metadata (like EMP_ID) or clustering to reduce scanning.
+	Good clustering means similar values are stored together, making pruning more effective.
+
+
+---------------------------------------
+
+Ecommerce project / RBAC roles / Snowpipe
+
+
+--SnowPipe
+
+1. Create S3 Bucket in AWS/S3, 
+	in S3 Bucket Snowpipekkr create one folder sourcefolder
+	in Sourcefolder upload daily_sales.csv
+
+Note: snowsight/upload excel/ this date 2026-07-20 it won't accept by snowflake, snowflake internal date format is 20-07-2026
+
