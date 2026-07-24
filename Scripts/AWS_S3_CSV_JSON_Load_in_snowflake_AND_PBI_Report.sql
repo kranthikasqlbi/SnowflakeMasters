@@ -1,5 +1,7 @@
 --Project :
 -- Snowflake Data Loading and Power BI Reporting using CSV and JSON Data
+OR
+-- Bulk Loading from Amazon S3 to Snowflake and Visualizing in Power BI using COPY
 
 CREATE OR REPLACE DATABASE mydatabase;
 
