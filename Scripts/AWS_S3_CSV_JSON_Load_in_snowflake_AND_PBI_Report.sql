@@ -1,3 +1,6 @@
+--Project :
+-- Snowflake Data Loading and Power BI Reporting using CSV and JSON Data
+
 CREATE OR REPLACE DATABASE mydatabase;
 
 --CREATE OR REPLACE TEMPORARY TABLE mycsvtable (
@@ -103,3 +106,16 @@ FROM MYJSONTABLE;
 
 DROP DATABASE IF EXISTS mydatabase;
 DROP WAREHOUSE IF EXISTS mywarehouse;
+
+
+
+Note:
+Snowflake Data Loading and Power BI Reporting using CSV and JSON Data
+
+Other resume-friendly options:
+
+End-to-End Snowflake Data Ingestion and Power BI Dashboard
+CSV & JSON Data Integration with Snowflake and Power BI
+Snowflake External Stage, Data Loading, and Power BI Visualization
+Building an Analytics Pipeline with Snowflake and Power BI
+Data Warehouse Reporting using Snowflake and Power BI
