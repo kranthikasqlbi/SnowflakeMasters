@@ -87,7 +87,7 @@ CREATE OR REPLACE TABLE save_copy_errors AS SELECT * FROM TABLE(VALIDATE(mycsvta
   SELECT * FROM myjsontable;
 
 
---You need to flatten the JSON in Snowflake to data as charts in powerBI.
+--You need to flatten the JSON in Snowflake to see the data as charts in powerBI.
 
 CREATE OR REPLACE VIEW MYJSON_VIEW AS
 SELECT
