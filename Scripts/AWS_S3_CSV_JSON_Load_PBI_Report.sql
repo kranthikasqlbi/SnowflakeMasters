@@ -1,7 +1,7 @@
 CREATE OR REPLACE DATABASE mydatabase;
 
 --CREATE OR REPLACE TEMPORARY TABLE mycsvtable (
--- I want to see data in powerbi, hence creating in power, temp table wonot appear in power bi 
+-- I want to see data in powerbi, hence creating perminent table, temp table wonot appear in power bi 
 CREATE OR REPLACE TABLE mycsvtable (
      id INTEGER,
      last_name STRING,
@@ -14,7 +14,8 @@ CREATE OR REPLACE TABLE mycsvtable (
      city STRING,
      postalcode STRING);
 
--- I want to see data in powerbi, hence creating in power, temp table wonot appear in power bi 
+
+-- I want to see data in powerbi, hence creating perminent table, temp table wonot appear in power bi 
 --CREATE OR REPLACE TEMPORARY TABLE myjsontable
 CREATE OR REPLACE TABLE myjsontable (
      json_data VARIANT);
@@ -85,8 +86,8 @@ CREATE OR REPLACE TABLE save_copy_errors AS SELECT * FROM TABLE(VALIDATE(mycsvta
 
   SELECT * FROM myjsontable;
 
-  DROP DATABASE IF EXISTS mydatabase;
-DROP WAREHOUSE IF EXISTS mywarehouse;
+
+--You need to flatten the JSON in Snowflake to data as charts in powerBI.
 
 CREATE OR REPLACE VIEW MYJSON_VIEW AS
 SELECT
@@ -98,3 +99,7 @@ SELECT
     JSON_DATA:customer.company::STRING AS COMPANY,
     JSON_DATA:customer.address::STRING AS ADDRESS
 FROM MYJSONTABLE;
+
+
+DROP DATABASE IF EXISTS mydatabase;
+DROP WAREHOUSE IF EXISTS mywarehouse;
